@@ -1,0 +1,165 @@
+h1 {
+  color: #007bff;
+  margin-bottom: 20px;
+  animation: pulse 1s infinite alternate;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  animation: colorChange 10s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+      background-color: #f8f9fa;
+  }
+  100% {
+      background-color: #f0f0f0;
+  }
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.05);
+  }
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+input, select, button {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  animation: bounce 1s ease infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-5px);
+  }
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-5px);
+  }
+  50% {
+      transform: translateX(5px);
+  }
+  75% {
+      transform: translateX(-5px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+#result {
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #f1f3f5;
+  animation: fadeIn 1s ease;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px; /* Increased top and bottom padding */
+  animation: bounceIn 1s ease;
+}
+
+.input-group {
+  margin-bottom: 30px; /* Increased bottom margin */
+  display: flex;
+  flex-wrap: wrap; /* Allow input elements to wrap to the next line */
+  justify-content: center;
+}
+
+input, select, button {
+  margin: 5px; /* Adjusted margin for input elements */
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+button {
+  min-width: 100px; /* Set minimum width for button */
+}
+
+#result {
+  font-size: 20px;
+  margin-top: 30px; /* Increased top margin */
+  padding: 20px; /* Increased padding */
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #f1f3f5;
+}
